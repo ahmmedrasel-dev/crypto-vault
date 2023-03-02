@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--primary: #10101c;
-	--secondary: ;
+body {
+	font-family: "Montserrat", sans-serif;
 }

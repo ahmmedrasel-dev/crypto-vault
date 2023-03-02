@@ -1,0 +1,33 @@
+.spotlight__marquee--track {
+	position: absolute;
+	height: 100%;
+	animation: marquee 32s linear infinite;
+}
+
+.text-gradient {
+	background: linear-gradient(270deg, #96cf24 10.53%, #5aa62b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.spotlight__content--link {
+	white-space: nowrap;
+	border: 1px splid var(--swap-color-primary-light);
+}
+
+.spotlight__marquee--content span {
+	display: inline-block;
+	width: 200px;
+	white-space: break-spaces;
+	padding: 1rem;
+	border-right: 1px solid #80808033;
+}
+
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
