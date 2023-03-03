@@ -1,0 +1,62 @@
+.partners__marquee .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	--gradient-color: #fff, hsla(0, 0%, 100%, 0);
+	--gradient-width: 200px;
+}
+
+.partners__marquee .overlay:after,
+.partners__marquee .overlay:before {
+	background: linear-gradient(90deg, var(--gradient-color));
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: var(--gradient-width);
+	z-index: 2;
+	pointer-events: none;
+}
+
+.partners__marquee .overlay:after,
+.partners__marquee .overlay:before {
+	background: linear-gradient(90deg, var(--gradient-color));
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: var(--gradient-width);
+	z-index: 2;
+	pointer-events: none;
+}
+
+.partners__marquee-1 .partners__marquee--track {
+	animation: marquee 30s linear infinite;
+}
+
+.partners__marquee--content > a,
+.partners__marquee--content > p {
+	width: 200px;
+	height: 100%;
+	display: inline-block;
+	font-size: 1.4rem;
+	white-space: break-spaces;
+	padding: 1rem;
+	margin-right: 4rem;
+}
+
+.partners__marquee--content > a > img,
+.partners__marquee--content > p > img {
+	width: 200px;
+	height: 100%;
+	object-fit: contain;
+}
+
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
